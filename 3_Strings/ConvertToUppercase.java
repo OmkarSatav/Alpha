@@ -6,7 +6,7 @@ public class ConvertToUppercase {
         StringBuilder newStr = new StringBuilder("");
         char firstChar = Character.toUpperCase(str.charAt(0));
         newStr.append(firstChar);
-        for(int i=0; i<str.length(); i++) {
+        for(int i=1; i<str.length(); i++) {
             if(str.charAt(i) == ' ' && i != str.length()-1) {
                 newStr.append(str.charAt(i));
                 i++;
